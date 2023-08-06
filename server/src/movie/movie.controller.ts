@@ -10,14 +10,14 @@ import {
   Query,
 } from '@nestjs/common';
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
-import { SwaggerApiDocumentation } from 'src/common/decorators/swagger-api-documentation.decorator';
-import { BaseApiResponse } from 'src/common/dto/api-response/base-api-response.dto';
-import { SuccessApiResponse } from 'src/common/dto/api-response/success-api-response.dto';
+import { SwaggerApiDocumentation } from '../../src/common/decorators/swagger-api-documentation.decorator';
+import { BaseApiResponse } from '../../src/common/dto/api-response/base-api-response.dto';
+import { SuccessApiResponse } from '../../src/common/dto/api-response/success-api-response.dto';
 import { MovieService } from './movie.service';
 import { MovieErrors } from './constants/messages.error';
 import { MovieSuccess } from './constants/messages.success';
-import { PaginateResultDto } from 'src/common/dto/pagination/paginate-result-dto';
-import { PaginateDto } from 'src/common/dto/pagination/paginate-sort-dto';
+import { PaginateResultDto } from '../../src/common/dto/pagination/paginate-result-dto';
+import { PaginateDto } from '../../src/common/dto/pagination/paginate-sort-dto';
 import { GetMovieDto } from './dto/get-movie.dto';
 import { UpdateMovieDto } from './dto/update-movie.dto';
 import { CreateMovieDto } from './dto/create-movie.dto';

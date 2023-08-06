@@ -29,17 +29,17 @@ export class GetReservationDto {
   @ApiProperty({ type: String, required: true, description: 'hall name' })
   @IsNotEmpty()
   @IsString()
-  hallName: string;
+  hallName?: string;
 
   @ApiProperty({ type: Number, required: true, description: 'Movie id' })
   @IsNotEmpty()
   @IsNumber()
-  movieId: number;
+  movieId?: number;
 
   @ApiProperty({ type: String, required: true, description: 'Movie name' })
   @IsNotEmpty()
   @IsString()
-  movieName: string;
+  movieName?: string;
 
   @ApiProperty({ type: Number, required: true, description: 'Movie show id' })
   @IsNotEmpty()
@@ -49,17 +49,17 @@ export class GetReservationDto {
   @ApiProperty({ type: Number, required: true, description: 'Party Time id' })
   @IsNotEmpty()
   @IsNumber()
-  partyTimeId: number;
+  partyTimeId?: number;
 
   @ApiProperty({ type: String, required: true, description: 'Party Time From' })
   @IsNotEmpty()
   @IsString()
-  partyTimeFrom: string;
+  partyTimeFrom?: string;
 
   @ApiProperty({ type: String, required: true, description: 'Party Time To' })
   @IsNotEmpty()
   @IsString()
-  partyTimeTo: string;
+  partyTimeTo?: string;
   
   constructor(reservation: Partial<GetReservationDto>) {
     Object.assign(this, reservation);

@@ -1,14 +1,14 @@
 import { Injectable, BadRequestException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { PaginateResultDto } from 'src/common/dto/pagination/paginate-result-dto';
-import { PaginateDto } from 'src/common/dto/pagination/paginate-sort-dto';
+import { PaginateResultDto } from '../../src/common/dto/pagination/paginate-result-dto';
+import { PaginateDto } from '../../src/common/dto/pagination/paginate-sort-dto';
 import { Repository } from 'typeorm';
 import { CreateReservationDto } from './dto/create-reservation.dto';
 import { GetReservationDto } from './dto/get-reservation.dto';
 import { UpdateReservationDto } from './dto/update-reservation.dto';
 import { Reservation } from './reservation.entity';
 import { MovieShowMetaDataDto } from './dto/movie-show-meta-data.dto';
-import { MovieShow } from 'src/movie-show/movie-show.entity';
+import { MovieShow } from '../../src/movie-show/movie-show.entity';
 
 @Injectable()
 export class ReservationService {

@@ -5,7 +5,7 @@ import {
   RequestMethod,
 } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { CommonModule } from 'src/common/common.module';
+import { CommonModule } from '../../src/common/common.module';
 import { SeatExistsMiddleware } from './seat-exists.middleware';
 import { SeatController } from './seat.controller';
 import { SeatService } from './seat.service';

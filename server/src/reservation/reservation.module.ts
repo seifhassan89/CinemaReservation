@@ -5,12 +5,12 @@ import {
   RequestMethod,
 } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { CommonModule } from 'src/common/common.module';
+import { CommonModule } from '../../src/common/common.module';
 // import { ReservationExistsMiddleware } from './reservation-exists.middleware';
 import { ReservationController } from './reservation.controller';
 import { ReservationService } from './reservation.service';
 import { Reservation } from './reservation.entity';
-import { MovieShow } from 'src/movie-show/movie-show.entity';
+import { MovieShow } from '../../src/movie-show/movie-show.entity';
 
 @Module({
   imports: [
