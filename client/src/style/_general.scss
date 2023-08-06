@@ -1,0 +1,76 @@
+.error-msg {
+  color: red;
+  margin: 5px 0;
+}
+
+hr {
+  background-color: grey;
+  margin: 20px 0 12px 0;
+}
+
+.hint {
+  color: grey;
+}
+
+.w-max-content {
+  width: max-content;
+}
+
+.h-max-content {
+  height: max-content;
+}
+
+.wrapper-bg {
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 16px;
+}
+
+.error-border {
+  border: 2px solid red !important;
+}
+
+.err {
+  color: red;
+}
+
+.err-asterisk {
+  color: red;
+}
+
+.opacity-7 {
+  opacity: 0.7;
+}
+
+.opacity-6 {
+  opacity: 0.6;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.content-wrapper {
+  background-color: white;
+  margin: 2.071rem;
+}
+
+.text-underline {
+  text-decoration: underline !important;
+  text-underline-offset: 0.15rem;
+}
+
+// To override browser autocomplete inputs styling
+input:-webkit-autofill,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+input:-webkit-autofill:hover {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+input:-webkit-autofill {
+  -webkit-border-radius: 10px !important;
+}
