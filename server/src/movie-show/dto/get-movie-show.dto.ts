@@ -1,8 +1,8 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { IsNotEmpty, IsNumber } from 'class-validator';
-import { Hall } from 'src/hall/hall.entity';
-import { Movie } from 'src/movie/movie.entity';
-import { PartyTime } from 'src/party-time/party-time.entity';
+import { Hall } from '../../../src/hall/hall.entity';
+import { Movie } from '../../../src/movie/movie.entity';
+import { PartyTime } from '../../../src/party-time/party-time.entity';
 
 export class GetMovieShowDto {
   @IsNumber()

@@ -1,5 +1,5 @@
-import { Hall } from 'src/hall/hall.entity';
-import { Reservation } from 'src/reservation/reservation.entity';
+import { Hall } from '../../src/hall/hall.entity';
+import { Reservation } from '../../src/reservation/reservation.entity';
 import {
   Column,
   Entity,

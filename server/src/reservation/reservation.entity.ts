@@ -1,5 +1,5 @@
-import { MovieShow } from 'src/movie-show/movie-show.entity';
-import { Seat } from 'src/seat/seat.entity';
+import { MovieShow } from '../../src/movie-show/movie-show.entity';
+import { Seat } from '../../src/seat/seat.entity';
 import {
   Column,
   Entity,

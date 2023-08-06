@@ -10,14 +10,14 @@ import {
   Query,
 } from '@nestjs/common';
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
-import { SwaggerApiDocumentation } from 'src/common/decorators/swagger-api-documentation.decorator';
-import { BaseApiResponse } from 'src/common/dto/api-response/base-api-response.dto';
-import { SuccessApiResponse } from 'src/common/dto/api-response/success-api-response.dto';
+import { SwaggerApiDocumentation } from '../../src/common/decorators/swagger-api-documentation.decorator';
+import { BaseApiResponse } from '../../src/common/dto/api-response/base-api-response.dto';
+import { SuccessApiResponse } from '../../src/common/dto/api-response/success-api-response.dto';
 import { SeatService } from './seat.service';
 import { SeatErrors } from './constants/messages.error';
 import { SeatSuccess } from './constants/messages.success';
-import { PaginateResultDto } from 'src/common/dto/pagination/paginate-result-dto';
-import { PaginateDto } from 'src/common/dto/pagination/paginate-sort-dto';
+import { PaginateResultDto } from '../../src/common/dto/pagination/paginate-result-dto';
+import { PaginateDto } from '../../src/common/dto/pagination/paginate-sort-dto';
 import { GetSeatDto } from './dto/get-seat.dto';
 import { UpdateSeatDto } from './dto/update-seat.dto';
 import { CreateSeatDto } from './dto/create-seat.dto';

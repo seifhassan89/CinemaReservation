@@ -10,14 +10,14 @@ import {
   Query,
 } from '@nestjs/common';
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
-import { SwaggerApiDocumentation } from 'src/common/decorators/swagger-api-documentation.decorator';
-import { BaseApiResponse } from 'src/common/dto/api-response/base-api-response.dto';
-import { SuccessApiResponse } from 'src/common/dto/api-response/success-api-response.dto';
+import { SwaggerApiDocumentation } from '../../src/common/decorators/swagger-api-documentation.decorator';
+import { BaseApiResponse } from '../../src/common/dto/api-response/base-api-response.dto';
+import { SuccessApiResponse } from '../../src/common/dto/api-response/success-api-response.dto';
 import { ReservationService } from './reservation.service';
 import { ReservationErrors } from './constants/messages.error';
 import { ReservationSuccess } from './constants/messages.success';
-import { PaginateResultDto } from 'src/common/dto/pagination/paginate-result-dto';
-import { PaginateDto } from 'src/common/dto/pagination/paginate-sort-dto';
+import { PaginateResultDto } from '../../src/common/dto/pagination/paginate-result-dto';
+import { PaginateDto } from '../../src/common/dto/pagination/paginate-sort-dto';
 import { GetReservationDto } from './dto/get-reservation.dto';
 import { UpdateReservationDto } from './dto/update-reservation.dto';
 import { CreateReservationDto } from './dto/create-reservation.dto';
@@ -67,7 +67,6 @@ export class ReservationController {
   async findByMovieShowMetaData(
     @Query() movieShowMetaData: MovieShowMetaDataDto,
   ): Promise<GetReservationDto[]> {
-    
     const Reservations: GetReservationDto[] =
       await this.reservationService.findByMovieShowMetaData(movieShowMetaData);
     return Reservations;
