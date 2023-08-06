@@ -1,0 +1,31 @@
+.snackbar_container {
+  .MuiSnackbar-root {
+    .MuiAlert-action {
+      display: none;
+    }
+    .MuiAlert-root {
+      width: 30rem;
+      height: 2rem;
+      align-items: center;
+      justify-content: center;
+    }
+    &.alert_no_1 {
+      top: 2rem;
+    }
+    &.alert_no_2 {
+      top: 5rem;
+    }
+    &.alert_no_3 {
+      top: 8rem;
+    }
+    &.alert_no_4 {
+      top: 11rem;
+    }
+    &.alert_no_5 {
+      top: 14rem;
+    }
+    .MuiAlert-root {
+      border-radius: 8px;
+    }
+  }
+}
