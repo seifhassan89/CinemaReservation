@@ -33,24 +33,25 @@ const BookButton = () => {
 
   return (
     <>
-      <Box
-        sx={{
-          display: 'flex',
-          alignItems: 'center',
-          cursor: 'pointer',
-          color: 'success.main',
-        }}
-        onClick={handleClickOpen}>
-        <BookOnlineIcon fontSize="small" sx={{ mr: 1 }} />
-        <Typography
-          variant="body1"
+      <div className="d-flex align-items-center cursor-pointer" onClick={handleClickOpen}>
+        <Box
           sx={{
-            pb: locale === 'ar' ? '4px' : '0',
-            pt: locale === 'en' ? '2px' : '0',
+            display: 'flex',
+            alignItems: 'center',
+            cursor: 'pointer',
+            color: 'success.main',
           }}>
-          {movies?.movieDetailsLocale.bookMovie}
-        </Typography>
-      </Box>
+          <BookOnlineIcon fontSize="small" sx={{ mr: 1 }} />
+          <Typography
+            variant="body1"
+            sx={{
+              pb: locale === 'ar' ? '4px' : '0',
+              pt: locale === 'en' ? '2px' : '0',
+            }}>
+            {movies?.movieDetailsLocale.bookMovie}
+          </Typography>
+        </Box>
+      </div>
       <AlertDialog
         open={open}
         handleConfirm={handleConfirm}
