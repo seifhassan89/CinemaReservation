@@ -1,0 +1,15 @@
+.drop-down-wrapper {
+  .MuiAutocomplete-root {
+    background-color: #fff;
+  }
+
+  .MuiAutocomplete-inputRoot {
+    color: #000;
+  }
+
+  .MuiAutocomplete-endAdornment {
+    & > button {
+      color: #000;
+    }
+  }
+}

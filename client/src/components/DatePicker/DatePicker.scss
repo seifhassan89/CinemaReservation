@@ -1,0 +1,55 @@
+$nice-dates-color-accent: #006bb6;
+
+@import 'react-nice-dates/src/style.scss';
+
+@import '../../style/variables';
+.date-picker-wrapper {
+  .input {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #041937;
+    border-radius: 6px;
+    border: 1px solid #041937;
+    color: #fff;
+    display: block;
+    font-family: inherit;
+    font-size: inherit;
+    height: 42px;
+    outline: none;
+    padding: 28px 12px;
+    transition: border-color 0.2s;
+  }
+
+  .input:hover {
+    border-color: #fff;
+  }
+
+  .input.focused,
+  .input:focus {
+    border-color: #006bb6;
+  }
+
+  .input.error {
+    border-color: #d32f2f;
+  }
+
+  .input.disabled {
+    color: $disabled;
+  }
+
+  .nice-dates-popover {
+    direction: ltr !important;
+    max-width: 400px !important;
+    width: 80%;
+    @media (max-width: 750px) {
+      max-width: 300px !important;
+    }
+    @media (max-width: 350px) {
+      max-width: 250px !important;
+    }
+    @media (max-width: 250px) {
+      max-width: 150px !important;
+    }
+  }
+}
