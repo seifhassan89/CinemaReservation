@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    depends_on:
+      - database
+    environment:
+      DB_HOST: database
+      DB_PORT: 5432
+      DB_USERNAME: postgres
+      DB_PASSWORD: root
+      DB_NAME: cima
+      DB_SYNC: false
+      CLIENT_URL: http://localhost:3000
+      DATABASE_URL: postgres://postgres:password@database:5432/cima
+
+  frontend:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    ports:
+    - "3000:3000" 
+    depends_on:
+      - backend
+
+  database:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: cima
+    ports:
+      - "5432:5432"
+
+  migration:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    command: npm run db:run
+    depends_on:
+      - database
+      - backend
+    environment:
+      DATABASE_URL: postgres://postgres:root@database:5432/cima
