@@ -97,11 +97,9 @@ const MovieDetailsBookSeat = () => {
   };
 
   return (
-    <Box>
-      <Typography variant="h4" sx={{ textAlign: 'center', fontWeight: 'bold', mb: 2 }}>
-        {BookMovieFormLocale.TicketInfo}
-      </Typography>
-      <Box>
+    <div>
+      <h1 className="text-align-center font-weight-700 mb-4">{BookMovieFormLocale.TicketInfo}</h1>
+      <div>
         <Box
           sx={{
             display: 'flex',
@@ -114,20 +112,12 @@ const MovieDetailsBookSeat = () => {
             borderRadius: '30px',
             mb: 2,
           }}>
-          <Typography
-            variant="h6"
-            sx={{
-              fontWeight: 'bold',
-              mb: 2,
-              flex: 1,
-              flexGrow: 1,
-              marginBottom: 0,
-            }}>
+          <h4 className="font-weight-700 mb-2 flex-1 flex-grow-1 mb-0 flex-shrink-0">
             {BookMovieFormLocale.selectedMovie}: {queryParameter.movieId}
-          </Typography>
-          <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 2, flex: 1, flexGrow: 1, marginBottom: 0 }}>
+          </h4>
+          <h4 className="font-weight-700 mb-2 flex-1 flex-grow-1 mb-0 flex-shrink-0">
             {BookMovieFormLocale.date}: {dateFormat(queryParameter.reservationDate ?? new Date())}
-          </Typography>
+          </h4>
         </Box>
         <Box
           sx={{
@@ -140,14 +130,14 @@ const MovieDetailsBookSeat = () => {
             paddingX: '40px',
             borderRadius: '30px',
           }}>
-          <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 2, flex: 1, flexGrow: 1, marginBottom: 0 }}>
+          <h4 className="font-weight-700 mb-2 flex-1 flex-grow-1 mb-0 flex-shrink-1">
             {BookMovieFormLocale.selectedHall}: {queryParameter.hallId}
-          </Typography>
-          <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 2, flexGrow: 1, flex: 1, marginBottom: 0 }}>
+          </h4>
+          <h4 className="font-weight-700 mb-2 flex-1 flex-grow-1 mb-0 flex-shrink-1">
             {BookMovieFormLocale.time}: {getPartyTime(queryParameter.partyTimeId ?? 0)}
-          </Typography>
+          </h4>
         </Box>
-      </Box>
+      </div>
       <Typography variant="h4" sx={{ textAlign: 'center', fontWeight: 'bold', mb: 2, mt: 6 }}>
         {BookMovieFormLocale.availableSeats}
       </Typography>
@@ -173,7 +163,7 @@ const MovieDetailsBookSeat = () => {
         title={BookMovieFormLocale.reservationOnSeat}
         description={BookMovieFormLocale.reservationOnSeatMessage}
       />
-    </Box>
+    </div>
   );
 };
 
