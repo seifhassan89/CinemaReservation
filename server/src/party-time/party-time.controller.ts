@@ -10,14 +10,14 @@ import {
   Query,
 } from '@nestjs/common';
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
-import { SwaggerApiDocumentation } from 'src/common/decorators/swagger-api-documentation.decorator';
-import { BaseApiResponse } from 'src/common/dto/api-response/base-api-response.dto';
-import { SuccessApiResponse } from 'src/common/dto/api-response/success-api-response.dto';
+import { SwaggerApiDocumentation } from '../../src/common/decorators/swagger-api-documentation.decorator';
+import { BaseApiResponse } from '../../src/common/dto/api-response/base-api-response.dto';
+import { SuccessApiResponse } from '../../src/common/dto/api-response/success-api-response.dto';
 import { PartyTimeService } from './party-time.service';
 import { PartyTimeErrors } from './constants/messages.error';
 import { PartyTimeSuccess } from './constants/messages.success';
-import { PaginateResultDto } from 'src/common/dto/pagination/paginate-result-dto';
-import { PaginateDto } from 'src/common/dto/pagination/paginate-sort-dto';
+import { PaginateResultDto } from '../../src/common/dto/pagination/paginate-result-dto';
+import { PaginateDto } from '../../src/common/dto/pagination/paginate-sort-dto';
 import { GetPartyTimeDto } from './dto/get-party-time.dto';
 import { UpdatePartyTimeDto } from './dto/update-party-time.dto';
 import { CreatePartyTimeDto } from './dto/create-party-time.dto';

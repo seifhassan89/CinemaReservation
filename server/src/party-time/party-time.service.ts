@@ -1,13 +1,13 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { PaginateResultDto } from 'src/common/dto/pagination/paginate-result-dto';
-import { PaginateDto } from 'src/common/dto/pagination/paginate-sort-dto';
+import { PaginateResultDto } from '../../src/common/dto/pagination/paginate-result-dto';
+import { PaginateDto } from '../../src/common/dto/pagination/paginate-sort-dto';
 import { Repository } from 'typeorm';
 import { CreatePartyTimeDto } from './dto/create-party-time.dto';
 import { GetPartyTimeDto } from './dto/get-party-time.dto';
 import { UpdatePartyTimeDto } from './dto/update-party-time.dto';
 import { PartyTime } from './party-time.entity';
-import { MovieShow } from 'src/movie-show/movie-show.entity';
+import { MovieShow } from '../../src/movie-show/movie-show.entity';
 
 @Injectable()
 export class PartyTimeService {

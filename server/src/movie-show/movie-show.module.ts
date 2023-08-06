@@ -5,7 +5,7 @@ import {
   RequestMethod,
 } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { CommonModule } from 'src/common/common.module';
+import { CommonModule } from '../../src/common/common.module';
 import { MovieShowExistsMiddleware } from './movie-show-exists.middleware';
 import { MovieShowController } from './movie-show.controller';
 import { MovieShowService } from './movie-show.service';

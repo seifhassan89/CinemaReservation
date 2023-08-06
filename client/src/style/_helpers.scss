@@ -1,0 +1,42 @@
+$widthValues: (
+  "10",
+  "20",
+  "30",
+  "33",
+  "40",
+  "50",
+  "55",
+  "60",
+  "70",
+  "80",
+  "85",
+  "90",
+  "100"
+);
+// different width sizes
+@each $widthVal in $widthValues {
+  .w-#{$widthVal} {
+    width: #{str-insert($widthVal, $insert : "%", $index: -1)}
+  }
+}
+
+$sizes: (10, 11, 12, 14, 15, 16, 18, 20, 22, 24, 26, 28, 30, 32, 40, 50);
+@each $size in $sizes {
+  .fsize-#{$size} {
+    font-size: calc($size / 14) + rem !important;
+  }
+}
+
+$weights: (400, 500, 600, 700);
+@each $weight in $weights {
+  .fweight-#{$weight} {
+    font-weight: $weight !important;
+  }
+}
+
+$borderRadiuses: (4, 8, 10, 12, 14, 16, 18, 20);
+@each $radius in $borderRadiuses {
+  .border-radius-#{$radius} {
+    border-radius: $radius + px !important;
+  }
+}

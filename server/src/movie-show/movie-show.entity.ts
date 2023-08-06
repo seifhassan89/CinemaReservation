@@ -1,7 +1,7 @@
-import { Hall } from 'src/hall/hall.entity';
-import { Movie } from 'src/movie/movie.entity';
-import { PartyTime } from 'src/party-time/party-time.entity';
-import { Reservation } from 'src/reservation/reservation.entity';
+import { Hall } from '../../src/hall/hall.entity';
+import { Movie } from '../../src/movie/movie.entity';
+import { PartyTime } from '../../src/party-time/party-time.entity';
+import { Reservation } from '../../src/reservation/reservation.entity';
 import {
   Column,
   Entity,
