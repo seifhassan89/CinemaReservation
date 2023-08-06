@@ -113,6 +113,10 @@ as we go to http://localhost:3000
 ## type any email: to get pass from login (test@test.com) this is demo for authentication and authorization.
 
 
+## Database ERD
+![CimaERD](https://github.com/seifhassan89/CinemaReservation/assets/64795421/71c858c4-2e3e-4074-a83c-86b5403d9262)
+
+
 ## Contributing
 Contributions to this project are welcome! To contribute, follow these steps:
 
