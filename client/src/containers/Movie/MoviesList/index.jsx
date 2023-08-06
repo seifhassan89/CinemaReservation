@@ -75,8 +75,8 @@ const Movies = () => {
   const fields = ['name', 'imageUrl'];
 
   return (
-    <Box
-      sx={{
+    <div
+      style={{
         paddingBottom: '100px',
       }}>
       <Table
@@ -94,7 +94,7 @@ const Movies = () => {
         ]}
         locale={moviesLocale?.table}
       />
-    </Box>
+    </div>
   );
 };
 
