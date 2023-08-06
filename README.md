@@ -1,4 +1,4 @@
-# Cinema Reservation Web API using NestJS and postgresql, ReactJs
+# Cinema Reservation Web API using NestJS and Postgresql, ReactJs, Translation(En,Ar)
 This is a simple Cinema Reservation Web API that allows you to perform
 
 ## Features 
