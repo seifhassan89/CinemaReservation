@@ -58,7 +58,7 @@ git clone https://github.com/seifhassan89/CinemaReservation
 ```
 Please visit https://nodejs.org/en and follow the instractions
 ```
-3. Install Nextjs if you haven't already
+3. Install Nestjs if you haven't already
 ```
 npm install -g @nestjs/cli
 ```
@@ -77,10 +77,6 @@ cd client
 7. Run bundle install to install all required node module for FE project
 ```
 npm install
-```
-8. Run FE Project by:
-```
-npm start
 ```
 
 ## Run the application
